@@ -3,7 +3,7 @@ use dojo_starter::utils::common::Vec2D;
 
 #[derive(Copy, Drop, Serde)]
 #[dojo::model]
-struct ArenaBounds {
+struct Arena {
     #[key]
     itemID: u8,
     staring_bound: Vec2D,

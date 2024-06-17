@@ -1,10 +1,7 @@
 mod models {
-    mod action_hash;
-    mod arena_bounds;
-    mod health;
-    mod ki_blast_position;
-    mod player_position;
-    mod senzu_position;
+    mod player_model;
+    mod senzubean_model;
+    mod arena_model;
 }
 
 mod systems {

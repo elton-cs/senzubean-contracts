@@ -319,8 +319,8 @@
   },
   {
     "type": "impl",
-    "name": "arena_boundsImpl",
-    "interface_name": "dojo_starter::models::arena_bounds::Iarena_bounds"
+    "name": "arenaImpl",
+    "interface_name": "dojo_starter::models::arena_model::Iarena"
   },
   {
     "type": "struct",
@@ -338,7 +338,7 @@
   },
   {
     "type": "struct",
-    "name": "dojo_starter::models::arena_bounds::ArenaBounds",
+    "name": "dojo_starter::models::arena_model::Arena",
     "members": [
       {
         "name": "itemID",
@@ -356,7 +356,7 @@
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::arena_bounds::Iarena_bounds",
+    "name": "dojo_starter::models::arena_model::Iarena",
     "items": [
       {
         "type": "function",
@@ -364,7 +364,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::arena_bounds::ArenaBounds"
+            "type": "dojo_starter::models::arena_model::Arena"
           }
         ],
         "outputs": [],
@@ -374,7 +374,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::arena_bounds::arena_bounds::Event",
+    "name": "dojo_starter::models::arena_model::arena::Event",
     "kind": "enum",
     "variants": []
   }

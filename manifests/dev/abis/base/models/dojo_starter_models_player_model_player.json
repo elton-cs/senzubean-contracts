@@ -319,8 +319,8 @@
   },
   {
     "type": "impl",
-    "name": "senzu_bean_positionImpl",
-    "interface_name": "dojo_starter::models::senzu_position::Isenzu_bean_position"
+    "name": "playerImpl",
+    "interface_name": "dojo_starter::models::player_model::Iplayer"
   },
   {
     "type": "struct",
@@ -338,21 +338,33 @@
   },
   {
     "type": "struct",
-    "name": "dojo_starter::models::senzu_position::SenzuBeanPosition",
+    "name": "dojo_starter::models::player_model::Player",
     "members": [
       {
-        "name": "itemID",
+        "name": "playerID",
+        "type": "core::starknet::contract_address::ContractAddress"
+      },
+      {
+        "name": "health",
         "type": "core::integer::u8"
       },
       {
-        "name": "position",
+        "name": "unit_position",
         "type": "dojo_starter::utils::common::Vec2D"
+      },
+      {
+        "name": "attack_position",
+        "type": "dojo_starter::utils::common::Vec2D"
+      },
+      {
+        "name": "pending_actions_hash",
+        "type": "core::felt252"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::senzu_position::Isenzu_bean_position",
+    "name": "dojo_starter::models::player_model::Iplayer",
     "items": [
       {
         "type": "function",
@@ -360,7 +372,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::senzu_position::SenzuBeanPosition"
+            "type": "dojo_starter::models::player_model::Player"
           }
         ],
         "outputs": [],
@@ -370,7 +382,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::senzu_position::senzu_bean_position::Event",
+    "name": "dojo_starter::models::player_model::player::Event",
     "kind": "enum",
     "variants": []
   }

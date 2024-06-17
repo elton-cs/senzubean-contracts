@@ -319,26 +319,58 @@
   },
   {
     "type": "impl",
-    "name": "pending_action_hashImpl",
-    "interface_name": "dojo_starter::models::action_hash::Ipending_action_hash"
+    "name": "senzu_beanImpl",
+    "interface_name": "dojo_starter::models::senzubean_model::Isenzu_bean"
   },
   {
     "type": "struct",
-    "name": "dojo_starter::models::action_hash::PendingActionHash",
+    "name": "dojo_starter::utils::common::Vec2D",
     "members": [
       {
-        "name": "entityID",
-        "type": "core::starknet::contract_address::ContractAddress"
+        "name": "x",
+        "type": "core::integer::u32"
       },
       {
-        "name": "hash",
-        "type": "core::felt252"
+        "name": "y",
+        "type": "core::integer::u32"
+      }
+    ]
+  },
+  {
+    "type": "enum",
+    "name": "core::bool",
+    "variants": [
+      {
+        "name": "False",
+        "type": "()"
+      },
+      {
+        "name": "True",
+        "type": "()"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "dojo_starter::models::senzubean_model::SenzuBean",
+    "members": [
+      {
+        "name": "itemID",
+        "type": "core::integer::u8"
+      },
+      {
+        "name": "position",
+        "type": "dojo_starter::utils::common::Vec2D"
+      },
+      {
+        "name": "is_eaten",
+        "type": "core::bool"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::action_hash::Ipending_action_hash",
+    "name": "dojo_starter::models::senzubean_model::Isenzu_bean",
     "items": [
       {
         "type": "function",
@@ -346,7 +378,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::action_hash::PendingActionHash"
+            "type": "dojo_starter::models::senzubean_model::SenzuBean"
           }
         ],
         "outputs": [],
@@ -356,7 +388,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::action_hash::pending_action_hash::Event",
+    "name": "dojo_starter::models::senzubean_model::senzu_bean::Event",
     "kind": "enum",
     "variants": []
   }
