@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x3c550e4ee505dd6108d4ab0d45f2d8ad15c5aa001130a5cc35f136dc627d67a"
+original_class_hash = "0x3c550e4ee505dd6108d4ab0d45f2d8ad15c5aa001130a5cc35f136dc627d67a"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_player_player.json"
+name = "dojo_starter::models::player::player"
+
+[[members]]
+name = "playerID"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "character"
+type = "PlayableCharacter"
+key = false

@@ -320,11 +320,11 @@
   {
     "type": "impl",
     "name": "healthImpl",
-    "interface_name": "dojo_starter::models::player_model::Ihealth"
+    "interface_name": "dojo_starter::models::player::Ihealth"
   },
   {
     "type": "struct",
-    "name": "dojo_starter::models::player_model::Health",
+    "name": "dojo_starter::models::player::Health",
     "members": [
       {
         "name": "playerID",
@@ -338,7 +338,7 @@
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::player_model::Ihealth",
+    "name": "dojo_starter::models::player::Ihealth",
     "items": [
       {
         "type": "function",
@@ -346,7 +346,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::player_model::Health"
+            "type": "dojo_starter::models::player::Health"
           }
         ],
         "outputs": [],
@@ -356,7 +356,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::player_model::health::Event",
+    "name": "dojo_starter::models::player::health::Event",
     "kind": "enum",
     "variants": []
   }

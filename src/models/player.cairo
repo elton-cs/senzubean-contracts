@@ -15,6 +15,15 @@ enum PlayableCharacter {
     Cell,
 }
 
+impl PlayableCharacterIntoU8 of Into<PlayableCharacter, u8> {
+    fn into(self: PlayableCharacter) -> u8 {
+        match self {
+            PlayableCharacter::Gohan => 0,
+            PlayableCharacter::Cell => 1,
+        }
+    }
+}
+
 #[derive(Copy, Drop, Serde)]
 #[dojo::model]
 struct Health {
@@ -28,8 +37,7 @@ struct Health {
 struct Position {
     #[key]
     playerID: ContractAddress,
-    x: u32,
-    y: u32,
+    point: Vec2D,
 }
 
 #[derive(Copy, Drop, Serde)]
@@ -37,8 +45,7 @@ struct Position {
 struct KiBlast {
     #[key]
     playerID: ContractAddress,
-    x: u32,
-    y: u32,
+    point: Vec2D,
 }
 
 #[derive(Copy, Drop, Serde)]

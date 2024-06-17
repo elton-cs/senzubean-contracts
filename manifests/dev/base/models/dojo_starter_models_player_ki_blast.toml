@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x5bb3f69074132fbf81643e62a5b084ebdffe12716c598c59ec04540222bf894"
+original_class_hash = "0x5bb3f69074132fbf81643e62a5b084ebdffe12716c598c59ec04540222bf894"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_player_ki_blast.json"
+name = "dojo_starter::models::player::ki_blast"
+
+[[members]]
+name = "playerID"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "point"
+type = "Vec2D"
+key = false

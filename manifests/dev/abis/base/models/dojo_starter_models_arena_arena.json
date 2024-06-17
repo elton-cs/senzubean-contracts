@@ -319,26 +319,44 @@
   },
   {
     "type": "impl",
-    "name": "pending_actions_hashImpl",
-    "interface_name": "dojo_starter::models::player_model::Ipending_actions_hash"
+    "name": "arenaImpl",
+    "interface_name": "dojo_starter::models::arena::Iarena"
   },
   {
     "type": "struct",
-    "name": "dojo_starter::models::player_model::PendingActionsHash",
+    "name": "dojo_starter::utils::common::Vec2D",
     "members": [
       {
-        "name": "playerID",
-        "type": "core::starknet::contract_address::ContractAddress"
+        "name": "x",
+        "type": "core::integer::u32"
       },
       {
-        "name": "hash",
-        "type": "core::felt252"
+        "name": "y",
+        "type": "core::integer::u32"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "dojo_starter::models::arena::Arena",
+    "members": [
+      {
+        "name": "itemID",
+        "type": "core::integer::u8"
+      },
+      {
+        "name": "staring_bound",
+        "type": "dojo_starter::utils::common::Vec2D"
+      },
+      {
+        "name": "ending_bound",
+        "type": "dojo_starter::utils::common::Vec2D"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::player_model::Ipending_actions_hash",
+    "name": "dojo_starter::models::arena::Iarena",
     "items": [
       {
         "type": "function",
@@ -346,7 +364,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::player_model::PendingActionsHash"
+            "type": "dojo_starter::models::arena::Arena"
           }
         ],
         "outputs": [],
@@ -356,7 +374,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::player_model::pending_actions_hash::Event",
+    "name": "dojo_starter::models::arena::arena::Event",
     "kind": "enum",
     "variants": []
   }

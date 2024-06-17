@@ -1,0 +1,20 @@
+kind = "DojoModel"
+class_hash = "0x6ae8fc4e804afcb4fdb6160976247f56b4e3261561e90c5445d2271a19c58f7"
+original_class_hash = "0x6ae8fc4e804afcb4fdb6160976247f56b4e3261561e90c5445d2271a19c58f7"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_arena_arena.json"
+name = "dojo_starter::models::arena::arena"
+
+[[members]]
+name = "itemID"
+type = "u8"
+key = true
+
+[[members]]
+name = "staring_bound"
+type = "Vec2D"
+key = false
+
+[[members]]
+name = "ending_bound"
+type = "Vec2D"
+key = false

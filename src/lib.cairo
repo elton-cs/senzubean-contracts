@@ -1,7 +1,7 @@
 mod models {
-    mod player_model;
-    mod senzubean_model;
-    mod arena_model;
+    mod player;
+    mod senzubean;
+    mod arena;
 }
 
 mod systems {

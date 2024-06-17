@@ -1,0 +1,20 @@
+kind = "DojoModel"
+class_hash = "0x2a1ff1abc396f2a36dbb3f1bf54bf5df17ecc87c659ed642ca3f0c63763ce67"
+original_class_hash = "0x2a1ff1abc396f2a36dbb3f1bf54bf5df17ecc87c659ed642ca3f0c63763ce67"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_senzubean_senzubean.json"
+name = "dojo_starter::models::senzubean::senzubean"
+
+[[members]]
+name = "itemID"
+type = "u8"
+key = true
+
+[[members]]
+name = "point"
+type = "Vec2D"
+key = false
+
+[[members]]
+name = "is_eaten"
+type = "bool"
+key = false

@@ -319,8 +319,8 @@
   },
   {
     "type": "impl",
-    "name": "arenaImpl",
-    "interface_name": "dojo_starter::models::arena_model::Iarena"
+    "name": "senzubeanImpl",
+    "interface_name": "dojo_starter::models::senzubean::Isenzubean"
   },
   {
     "type": "struct",
@@ -337,26 +337,40 @@
     ]
   },
   {
+    "type": "enum",
+    "name": "core::bool",
+    "variants": [
+      {
+        "name": "False",
+        "type": "()"
+      },
+      {
+        "name": "True",
+        "type": "()"
+      }
+    ]
+  },
+  {
     "type": "struct",
-    "name": "dojo_starter::models::arena_model::Arena",
+    "name": "dojo_starter::models::senzubean::Senzubean",
     "members": [
       {
         "name": "itemID",
         "type": "core::integer::u8"
       },
       {
-        "name": "staring_bound",
+        "name": "point",
         "type": "dojo_starter::utils::common::Vec2D"
       },
       {
-        "name": "ending_bound",
-        "type": "dojo_starter::utils::common::Vec2D"
+        "name": "is_eaten",
+        "type": "core::bool"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::arena_model::Iarena",
+    "name": "dojo_starter::models::senzubean::Isenzubean",
     "items": [
       {
         "type": "function",
@@ -364,7 +378,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::arena_model::Arena"
+            "type": "dojo_starter::models::senzubean::Senzubean"
           }
         ],
         "outputs": [],
@@ -374,7 +388,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::arena_model::arena::Event",
+    "name": "dojo_starter::models::senzubean::senzubean::Event",
     "kind": "enum",
     "variants": []
   }

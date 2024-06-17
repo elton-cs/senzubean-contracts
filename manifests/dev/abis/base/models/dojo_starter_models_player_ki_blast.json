@@ -320,7 +320,7 @@
   {
     "type": "impl",
     "name": "ki_blastImpl",
-    "interface_name": "dojo_starter::models::player_model::Iki_blast"
+    "interface_name": "dojo_starter::models::player::Iki_blast"
   },
   {
     "type": "struct",
@@ -338,21 +338,21 @@
   },
   {
     "type": "struct",
-    "name": "dojo_starter::models::player_model::KiBlast",
+    "name": "dojo_starter::models::player::KiBlast",
     "members": [
       {
         "name": "playerID",
         "type": "core::starknet::contract_address::ContractAddress"
       },
       {
-        "name": "position",
+        "name": "point",
         "type": "dojo_starter::utils::common::Vec2D"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::player_model::Iki_blast",
+    "name": "dojo_starter::models::player::Iki_blast",
     "items": [
       {
         "type": "function",
@@ -360,7 +360,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::player_model::KiBlast"
+            "type": "dojo_starter::models::player::KiBlast"
           }
         ],
         "outputs": [],
@@ -370,7 +370,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::player_model::ki_blast::Event",
+    "name": "dojo_starter::models::player::ki_blast::Event",
     "kind": "enum",
     "variants": []
   }
