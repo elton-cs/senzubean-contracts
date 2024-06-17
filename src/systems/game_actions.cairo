@@ -10,12 +10,19 @@ mod game_actions {
     use super::{IGameActions};
     use dojo_starter::models::{arena::Arena, senzubean::Senzubean};
     use dojo_starter::utils::common::Vec2D;
+    use dojo_starter::utils::constants::{ARENA_MODEL_ID, SENZUBEAN_MODEL_ID};
 
-    const ARENA_MODEL_ID: u8 = 0;
-    const SENZUBEAN_MODEL_ID: u8 = 1;
 
     #[abi(embed_v0)]
-    impl ActionsImpl of IGameActions<ContractState> {
+    impl GameActionsImpl of IGameActions<ContractState> {
+        fn spawn_empty_game(ref world: IWorldDispatcher) {
+            let empty_player = Player {
+                playerID:  
+            };
+            let game = Game { itemID: GAME_ID, score: 0, is_game_over: false, };
+            set!(world,)
+        }
+
         fn spawn_arena(ref world: IWorldDispatcher, x: u32, y: u32) {
             let arena = Arena {
                 itemID: ARENA_MODEL_ID,

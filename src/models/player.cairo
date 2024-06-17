@@ -1,7 +1,7 @@
 use starknet::ContractAddress;
 use dojo_starter::utils::common::Vec2D;
 
-#[derive(Copy, Drop, Serde)]
+#[derive(Copy, Drop, Serde, Introspect)]
 #[dojo::model]
 struct Player {
     #[key]

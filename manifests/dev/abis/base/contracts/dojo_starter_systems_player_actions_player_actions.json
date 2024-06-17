@@ -55,42 +55,17 @@
   },
   {
     "type": "impl",
-    "name": "GameActionsImpl",
-    "interface_name": "dojo_starter::systems::game_actions::IGameActions"
+    "name": "PlayerActionsImpl",
+    "interface_name": "dojo_starter::systems::player_actions::IPlayerActions"
   },
   {
     "type": "interface",
-    "name": "dojo_starter::systems::game_actions::IGameActions",
+    "name": "dojo_starter::systems::player_actions::IPlayerActions",
     "items": [
       {
         "type": "function",
-        "name": "spawn_arena",
-        "inputs": [
-          {
-            "name": "x",
-            "type": "core::integer::u32"
-          },
-          {
-            "name": "y",
-            "type": "core::integer::u32"
-          }
-        ],
-        "outputs": [],
-        "state_mutability": "external"
-      },
-      {
-        "type": "function",
-        "name": "spawn_senzubean",
-        "inputs": [
-          {
-            "name": "x",
-            "type": "core::integer::u32"
-          },
-          {
-            "name": "y",
-            "type": "core::integer::u32"
-          }
-        ],
+        "name": "spawn_player",
+        "inputs": [],
         "outputs": [],
         "state_mutability": "external"
       }
@@ -99,11 +74,11 @@
   {
     "type": "impl",
     "name": "IDojoInitImpl",
-    "interface_name": "dojo_starter::systems::game_actions::game_actions::IDojoInit"
+    "interface_name": "dojo_starter::systems::player_actions::player_actions::IDojoInit"
   },
   {
     "type": "interface",
-    "name": "dojo_starter::systems::game_actions::game_actions::IDojoInit",
+    "name": "dojo_starter::systems::player_actions::player_actions::IDojoInit",
     "items": [
       {
         "type": "function",
@@ -163,7 +138,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::systems::game_actions::game_actions::Event",
+    "name": "dojo_starter::systems::player_actions::player_actions::Event",
     "kind": "enum",
     "variants": [
       {
