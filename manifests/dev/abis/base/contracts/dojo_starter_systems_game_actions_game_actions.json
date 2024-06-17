@@ -56,11 +56,11 @@
   {
     "type": "impl",
     "name": "ActionsImpl",
-    "interface_name": "dojo_starter::systems::actions::IActions"
+    "interface_name": "dojo_starter::systems::game_actions::IGameActions"
   },
   {
     "type": "interface",
-    "name": "dojo_starter::systems::actions::IActions",
+    "name": "dojo_starter::systems::game_actions::IGameActions",
     "items": [
       {
         "type": "function",
@@ -99,11 +99,11 @@
   {
     "type": "impl",
     "name": "IDojoInitImpl",
-    "interface_name": "dojo_starter::systems::actions::actions::IDojoInit"
+    "interface_name": "dojo_starter::systems::game_actions::game_actions::IDojoInit"
   },
   {
     "type": "interface",
-    "name": "dojo_starter::systems::actions::actions::IDojoInit",
+    "name": "dojo_starter::systems::game_actions::game_actions::IDojoInit",
     "items": [
       {
         "type": "function",
@@ -163,7 +163,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::systems::actions::actions::Event",
+    "name": "dojo_starter::systems::game_actions::game_actions::Event",
     "kind": "enum",
     "variants": [
       {

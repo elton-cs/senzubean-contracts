@@ -5,7 +5,7 @@ mod models {
 }
 
 mod systems {
-    mod actions;
+    mod game_actions;
 }
 
 mod utils {
