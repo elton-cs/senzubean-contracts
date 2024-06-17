@@ -1,10 +1,14 @@
+mod models {
+    mod position;
+    mod health;
+}
+
 mod systems {
     mod actions;
 }
 
-mod models {
-    mod moves;
-    mod position;
+mod utils {
+    mod common;
 }
 
 mod tests {
