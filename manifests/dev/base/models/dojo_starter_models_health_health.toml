@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0xfa944b8ecfa351fb48113bce68ad6d22a8ca03e2b1702c0640f72c185a712c"
+original_class_hash = "0xfa944b8ecfa351fb48113bce68ad6d22a8ca03e2b1702c0640f72c185a712c"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_health_health.json"
+name = "dojo_starter::models::health::health"
+
+[[members]]
+name = "entityID"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "health"
+type = "u8"
+key = false
