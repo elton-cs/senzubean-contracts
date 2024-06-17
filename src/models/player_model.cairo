@@ -28,7 +28,8 @@ struct Health {
 struct Position {
     #[key]
     playerID: ContractAddress,
-    position: Vec2D,
+    x: u32,
+    y: u32,
 }
 
 #[derive(Copy, Drop, Serde)]
@@ -36,7 +37,8 @@ struct Position {
 struct KiBlast {
     #[key]
     playerID: ContractAddress,
-    position: Vec2D,
+    x: u32,
+    y: u32,
 }
 
 #[derive(Copy, Drop, Serde)]
