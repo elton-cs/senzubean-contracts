@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x4e04d5831ddbf4dc2389bc7b4aa9f4ac66eec35f2ba63eaf1e9446f81ad3380"
+original_class_hash = "0x4e04d5831ddbf4dc2389bc7b4aa9f4ac66eec35f2ba63eaf1e9446f81ad3380"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_ki_blast_position_ki_blast_position.json"
+name = "dojo_starter::models::ki_blast_position::ki_blast_position"
+
+[[members]]
+name = "entityID"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "position"
+type = "Vec2D"
+key = false

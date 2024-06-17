@@ -3,8 +3,8 @@ use dojo_starter::utils::common::Vec2D;
 
 #[derive(Copy, Drop, Serde)]
 #[dojo::model]
-struct Position {
+struct PlayerPosition {
     #[key]
-    player: ContractAddress,
-    vec: Vec2D,
+    entityID: ContractAddress,
+    position: Vec2D,
 }

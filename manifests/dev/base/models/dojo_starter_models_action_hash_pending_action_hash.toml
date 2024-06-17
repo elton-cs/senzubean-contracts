@@ -1,0 +1,15 @@
+kind = "DojoModel"
+class_hash = "0x7e5e879a4de586175a07999cfb2f3ea6b33a6f7a2bdac8ad3837b9dba1124f5"
+original_class_hash = "0x7e5e879a4de586175a07999cfb2f3ea6b33a6f7a2bdac8ad3837b9dba1124f5"
+abi = "manifests/dev/abis/base/models/dojo_starter_models_action_hash_pending_action_hash.json"
+name = "dojo_starter::models::action_hash::pending_action_hash"
+
+[[members]]
+name = "entityID"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "hash"
+type = "felt252"
+key = false
