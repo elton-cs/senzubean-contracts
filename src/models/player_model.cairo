@@ -6,8 +6,43 @@ use dojo_starter::utils::common::Vec2D;
 struct Player {
     #[key]
     playerID: ContractAddress,
+    character: PlayableCharacter,
+}
+
+#[derive(Copy, Drop, Serde, Introspect)]
+enum PlayableCharacter {
+    Gohan,
+    Cell,
+}
+
+#[derive(Copy, Drop, Serde)]
+#[dojo::model]
+struct Health {
+    #[key]
+    playerID: ContractAddress,
     health: u8,
-    unit_position: Vec2D,
-    attack_position: Vec2D,
-    pending_actions_hash: felt252,
+}
+
+#[derive(Copy, Drop, Serde)]
+#[dojo::model]
+struct Position {
+    #[key]
+    playerID: ContractAddress,
+    position: Vec2D,
+}
+
+#[derive(Copy, Drop, Serde)]
+#[dojo::model]
+struct KiBlast {
+    #[key]
+    playerID: ContractAddress,
+    position: Vec2D,
+}
+
+#[derive(Copy, Drop, Serde)]
+#[dojo::model]
+struct PendingActionsHash {
+    #[key]
+    playerID: ContractAddress,
+    hash: felt252,
 }
